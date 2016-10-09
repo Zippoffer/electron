@@ -1,0 +1,17 @@
+{
+  "name": "electron",
+  "description": "working with electron",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/Zippoffer/electron",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+   "dependencies": {
+    "materialize": "^0.97.7"
+  }
+}
