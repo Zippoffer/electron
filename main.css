@@ -1,15 +1,21 @@
 body {
-	background-color: wheat;
+	/*background: url(./images/Free_dark_crumpled_paper_texture_for_layers_%282984774568%29.jpg);*/
+	/*background-size: cover;*/
+	/*background-repeat: none;*/
+
+	background-color: black;
 	text-align: center;
+	color: PeachPuff;
+	padding-top: 23%;
 }
 .card {
 	display: table-row;
 	max-height: 420px;
 	width: 400px;
 	overflow: scroll;
-
-}
-.card-title {
+	/*background-color: #996666;*/
+	background-color: #c55;
+	color: PapayaWhip;
 
 }
 .titleBar {
@@ -17,4 +23,23 @@ body {
 }
 .cards {
 		margin-top: 12%;
+}
+#button {
+	background-image: url(./images/Free_dark_crumpled_paper_texture_for_layers_%282984774568%29.jpg);
+	background-size: cover;
+	background-repeat: none;
+	color: PeachPuff;
+	height: 100px;
+	width: 100px;
+	border-radius: 200%;
+	font-size: 1.25em;
+	text-align: center;
+	border: 1px solid #ea5732;
+	margin-top: 3%;
+}
+#input {
+	/*color: PeachPuff;*/
+}
+h1 {
+	color: #ea5732;
 }
