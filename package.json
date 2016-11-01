@@ -17,11 +17,10 @@
     "url": "https://github.com/Zippoffer/electron/issues"
   },
   "homepage": "https://github.com/Zippoffer/electron#readme",
-   "devDependencies": {
-    "electron": "^1.4.3"
+  "devDependencies": {
+    "electron": "1.4.2"
   },
   "dependencies": {
     "bower": "^1.7.9"
   }
 }
-
