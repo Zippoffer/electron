@@ -11,7 +11,12 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 700, height: 700})
+  mainWindow = new BrowserWindow({
+    width: 700,
+    height: 700,
+    maximizeable: false,
+    icon:'/images/220px-Ged_of_that_Ilk_Arms.svg.png'
+  })
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file:${__dirname}/index.html`)
