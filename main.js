@@ -1,4 +1,5 @@
 const electron = require('electron')
+
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
@@ -10,13 +11,13 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1280, height: 720})
+  mainWindow = new BrowserWindow({width: 700, height: 700})
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file:${__dirname}/index.html`)
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -25,7 +26,13 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+  mainWindow.on('new-window', function(e, url) {
+  e.preventDefault();
+  require('shell').openExternal(url);
+});
 }
+
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -51,3 +58,5 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+
