@@ -6,6 +6,7 @@ body {
 	background-color: black;
 	text-align: center;
 	color: PeachPuff;
+	padding-top: 23%;
 }
 .card {
 	display: table-row;
@@ -34,6 +35,7 @@ body {
 	font-size: 1.25em;
 	text-align: center;
 	border: 1px solid #ea5732;
+	margin-top: 3%;
 }
 #input {
 	/*color: PeachPuff;*/

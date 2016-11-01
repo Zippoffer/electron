@@ -15,7 +15,7 @@ function createWindow () {
     width: 700,
     height: 700,
     maximizeable: false,
-    icon:'/images/220px-Ged_of_that_Ilk_Arms.svg.png'
+    icon:'./images/argentina-39770_1280.png'
   })
 
   // and load the index.html of the app.
@@ -31,10 +31,12 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+
   mainWindow.on('new-window', function(e, url) {
   e.preventDefault();
   require('shell').openExternal(url);
 });
+  
 }
 
 
