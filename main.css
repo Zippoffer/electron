@@ -1,10 +1,20 @@
 body {
 	background-color: wheat;
+	text-align: center;
 }
 .card {
-	/*max-height: 420px;*/
-	/*overflow: scroll;*/
+	display: table-row;
+	max-height: 420px;
+	width: 400px;
+	overflow: scroll;
+
 }
-.card-action {
-	
+.card-title {
+
+}
+.titleBar {
+	text-align: center;
+}
+.cards {
+		margin-top: 12%;
 }
